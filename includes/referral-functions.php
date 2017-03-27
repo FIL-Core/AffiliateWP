@@ -227,7 +227,7 @@ function affwp_add_referral( $data = array() ) {
 		'description'  => ! empty( $data['description'] ) ? sanitize_text_field( $data['description'] ) : '',
 		'reference'    => ! empty( $data['reference'] )   ? sanitize_text_field( $data['reference'] )   : '',
 		'context'      => ! empty( $data['context'] )     ? sanitize_text_field( $data['context'] )     : '',
-		'custom'       => ! empty( $data['custom'] )      ? maybe_serialize( $data['custom'] )          : '',
+		'custom'       => ! empty( $data['custom'] )      ? $data['custom']                             : '',
 		'status'       => 'pending',
 	);
 
