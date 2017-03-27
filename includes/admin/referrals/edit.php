@@ -244,7 +244,7 @@ $disabled = disabled( (bool) $payout, true, false );
 
 				<td>
 					<input type="text" name="custom" id="custom" value="<?php echo esc_attr( $referral->custom ); ?>" <?php echo $readonly; ?> />
-					<p class="description"><?php _e( 'Custom data stored for this referral.', 'affiliate-wp' ); ?></p>
+					<p class="description"><?php _e( 'Custom data stored for this referral (optional).', 'affiliate-wp' ); ?></p>
 				</td>
 
 			</tr>
